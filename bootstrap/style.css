@@ -1,0 +1,24 @@
+.kapsayıcı {
+    background-color: #ff0000c5 !important;
+    padding: 100px !important;
+    width: 55%;
+    opacity: 0.53;
+    font-size: 50px !important;
+    color: #004030 !important;
+}
+
+.item {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.image {
+    width: 400px;
+    height: 500px;
+}
+
+.text-class{
+    width: 40%;
+    height: 200px;
+}

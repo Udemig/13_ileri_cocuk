@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Css Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <!-- 
+        * Bootstrap belirli avantajlar sağlamasına rağmen belirli noktalarda kısıtlar. Örn. background için hep belirgin renkleri kullanabiliyoruz, boyutlandırma noktasında belirli bir sınırlandırma var.
+
+        * Bu kısıtlamları kendi css dosyamınızda yazarak çözebiliriz. 
+
+        * Bootstrap css'i ve kendi css'imiz aynı anda çalıştığınıda çakışan css özelliği için bizim css'imiz geçerli olsun diye css özelliğinden nonra !important yazmamız gerekir. 
+    -->
+
+    <!--  
+        * Bootstrap daha hızlı bir responsive ui'lar elde etmemizi sağlar. Bu kütüphane hem hızlı stillendirme hem responsive tasarım hemde component yapısı ile daha kolay geliştirme yapmamızı sağlar. 
+
+        * Bootstrap still özelliklerini birer class adı altında toplar Bu class'lardan istifade edip stillendirme yapabilmemiz için bootstrap cdn'i ile html ve bootstrap kütüphanesini bağlamamız gerekir.
+    -->
+
+    <div
+        class="bg-danger pt-5 pe-4 pb-3 ps-2 mt-5 ms-3 me-2 mb-4 fs-1 fw-bolder text-start border border-5 border-success text-success kapsayıcı">
+        udemig
+    </div>
+
+    <div class="container bg-danger d-flex justify-content-betwween p-4 shadow-lg">
+        <button class="btn btn-secondary">Button-1</button>
+        <button class="btn btn-success">Button-2</button>
+        <button class="btn btn-dark">Button-3</button>
+        <button class="btn btn-warming">Button-4</button>
+    </div>
+
+    <p class="my-4 mx-3 bg-secondary p-3 text-white fw-bold text-class overflow-hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste omnis ipsa odio, et quos non quis fugit doloribus
+        at cupiditate consequuntur. Dolorum nisi dolor, nulla commodi saepe facere vel amet vero officia. Officiis
+        dolorum, nesciunt repellendus sint culpa, possimus aspernatur eius fugit quia sunt ut tenetur, rem ullam?
+        Deserunt, debitis!
+    </p>
+
+    <img 
+    src="https://picsum.photos/200" 
+    class="bg-danger m-3 image object-fit-cover"
+    alt="image"
+    >
+
+    <br><br><br><br><br>
+
+    <div class="w-50 max-1 p-5 bg-success position-relative">
+        <div class="position-absolute bg-danger top-0 end-0">Eleman-1</div>
+        <div class="position-absolute bg-warming bottom-0 end-0">Eleman-2</div>
+        <div class="position-absolute bg-secondary top-0 sart-0">Eleman-3</div>
+        <div class="position-absolute bg-primary top-0 start-0">Eleman-4</div>
+        <div class="item">Eleman-5</div>
+    </div>
+
+    <button class="btn btn-success position-fixed top-0 end-0">Whatsapp</button>
+
+    
+    <!-- * Bootstrap Responsive Desgin
+
+    Responsive tasaım günümüzde web sitelerine pc haricinde cihazlarda giriş yapıldığından dolayı bir web sitesi için önemlidir. Bu noktada bootstrap responsice tasarımı kolay bir şekilde yapmamızı sağlar. 
+
+    Bootstrap ile hızlıca responsive arayüz oluşturmak için ilk olarak row classı oluşturup içerisine col-[kırılmaNoktası-birim] classına sahip elemanları yeleştiririz. Buradaki kırılma noktaları bootstrap tarafından oluşturulmuş classlardır. Bu class şunlardır;
+
+    Breakpoint  Class infix Dimensions
+    X-small    None         <576px
+    Small      sm           >= 576px
+    Medium      md          >= 768px
+    Large       lg          >= 992px
+    Extra LArge        xl   >=1200px
+    Extra Extra Large   xxl   >=1400px
+     
+    Bu class ile media etiketine gerek kalmadan responsive tarasım oluşturabiliriz.
+
+    Bootstrap bir satırı (row) 12br olarak kabul eder. Ve yukarıdaki ekran boyutlarında bir satır içerisinde kaç eleman yer alacağını her elemana verilen birim ile belirlememizi ister. 
+
+    Örn. col-md-3 ilgili sütunun md ekranlardan (768px ve yukarısı) itibaren satır (row) içerisinde 3 birim kaplamasını sağlar.
+
+    -->
+
+    <div class="bg-primary m-2 p-3 row">
+        <div class="col-md-4 col-lg-3 col-xl-2">Eleman-1</div>
+        <div class="col-md-4 col-lg-3 col-xl-2">Eleman-2</div>
+        <div class="col-md-4 col-lg-3 col-xl-2">Eleman-3</div>
+        <div class="col-md-4 col-lg-3 col-xl-2">Eleman-4</div>
+        <div class="col-md-4 col-lg-3 col-xl-2">Eleman-5</div>
+        <div class="col-md-4 col-lg-3 col-xl-2">Eleman-6</div>
+        <div class="col-md-4 col-lg-3 col-xl-2">Eleman-7</div>
+        <div class="col-md-4 col-lg-3 col-xl-2">Eleman-8</div>
+
+    </div>
+
+
+
+    <!-- Bootstrap Js Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
