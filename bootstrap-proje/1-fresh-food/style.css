@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 5px 11%;
+}
+
+section {
+  padding: 100px 11%;
+}
+
+#logo {
+  width: 190px;
+}
+
+/* Menu */
+
+.raiting i {
+  color: #f9a503;
+}
+
+.top-menu .card p i {
+  color: crimson;
+}
+
+/* Seperation */
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: crimson;
+}
