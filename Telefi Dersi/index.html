@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telafi Dersi</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- 
+    Html -> Web sitesindeki elemanları oluşturmak için kullanılan bir işaretleme dilidir
+
+    Css -> Html'de oluşturulan elemanları stillendirmek için kullanılan stillendirme dilidir
+
+    Bootstrap -> Bir frontend kütüphanesidir. Html,css ve js kodlarından oluşur
+
+
+    Hem hızlı şekilde stillendirme hem de sahip olduğu componentler ile hızlı şekilde arayüz elde ederiz
+
+    -->
+
+    <!-- Css && Bootstrap Karşılaştırması
+    
+    Css ile detaylı stillendirme yaparız.
+    Bootstrap'de çok detaylı şekilde stillendirme yapamayız fakat hızlı şekilde stillendirme yaparız
+    -->
+
+    <!-- Background-color && Padding && Margin -->
+    <!-- Bootstrap'de stillendirme class isimleri üzerinden yapılır. Bu da bize hız kazandırır fakat aynı zamanda stillendirme konusunda çok detaylı bir stillendirme yapmamızı engeller. Bu durumda kendi css dosyamızda stillendirme yapabiliriz. Bunun için bootstrap class'ları haricinde bir class vererek stillendirme yapabildiğimiz gibi bootstrap class'larından biri özelleştirebiliriz. Bu sayede o projede geliştirdiğimiz stillendirmeyi kod tekrarına düşmeden kullanmış oluruz. -->
+
+    <!-- 
+    p -> padding
+    m -> margin
+    mb -> margin bottom
+    bg -> background
+    text -> text
+    -->
+    <div>
+      <div class="p-3 mb-2 bg-primary text-white padding">.bg-primary</div>
+      <div class="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+        .bg-primary-subtle
+      </div>
+      <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+      <div class="p-3 mb-2 bg-secondary-subtle text-secondary-emphasis">
+        .bg-secondary-subtle
+      </div>
+      <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+      <div class="p-3 mb-2 bg-success-subtle text-success-emphasis">
+        .bg-success-subtle
+      </div>
+      <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+      <div class="p-3 mb-2 bg-danger-subtle text-danger-emphasis">
+        .bg-danger-subtle
+      </div>
+      <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+      <div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis">
+        .bg-warning-subtle
+      </div>
+      <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+      <div class="p-3 mb-2 bg-info-subtle text-info-emphasis">
+        .bg-info-subtle
+      </div>
+      <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+      <div class="p-3 mb-2 bg-light-subtle text-light-emphasis">
+        .bg-light-subtle
+      </div>
+      <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+      <div class="p-3 mb-2 bg-dark-subtle text-dark-emphasis">
+        .bg-dark-subtle
+      </div>
+      <div class="p-3 mb-2 bg-body-secondary">.bg-body-secondary</div>
+      <div class="p-3 mb-2 bg-body-tertiary">.bg-body-tertiary</div>
+      <div class="p-3 mb-2 bg-body text-body">.bg-body</div>
+      <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
+      <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+      <div class="p-3 mb-2 bg-transparent text-body">.bg-transparent</div>
+    </div>
+
+    <h1 class="bg-danger ps-5 pt-2 pe-3 pb-4 text-white">Selamlar</h1>
+
+    <!-- Border -->
+    <div class="container container-1">
+      <span class="box border border-primary"></span>
+      <span class="box border border-primary-subtle"></span>
+      <span class="box border border-secondary"></span>
+      <span class="box border border-secondary-subtle"></span>
+      <span class="box border border-success"></span>
+      <span class="box border border-success-subtle"></span>
+      <span class="box border border-danger"></span>
+      <span class="box border border-danger-subtle"></span>
+      <span class="box border border-warning"></span>
+      <span class="box border border-warning-subtle"></span>
+      <span class="box border border-info"></span>
+      <span class="box border border-info-subtle"></span>
+      <span class="box border border-light"></span>
+      <span class="box border border-light-subtle"></span>
+      <span class="box border border-dark"></span>
+      <span class="box border border-dark-subtle"></span>
+      <span class="box border border-black"></span>
+      <span class="box border border-white"></span>
+    </div>
+
+    <h1
+      class="bg-danger mt-5 p-1 text-white border border-primary border-5 border-bottom-0"
+    >
+      Selamlar
+    </h1>
+
+    <!-- Text Color -->
+    <div class="container">
+      <p class="text-primary">.text-primary</p>
+      <p class="text-primary-emphasis">.text-primary-emphasis</p>
+      <p class="text-secondary">.text-secondary</p>
+      <p class="text-secondary-emphasis">.text-secondary-emphasis</p>
+      <p class="text-success">.text-success</p>
+      <p class="text-success-emphasis">.text-success-emphasis</p>
+      <p class="text-danger">.text-danger</p>
+      <p class="text-danger-emphasis">.text-danger-emphasis</p>
+      <p class="text-warning bg-dark">.text-warning</p>
+      <p class="text-warning-emphasis">.text-warning-emphasis</p>
+      <p class="text-info bg-dark">.text-info</p>
+      <p class="text-info-emphasis">.text-info-emphasis</p>
+      <p class="text-light bg-dark">.text-light</p>
+      <p class="text-light-emphasis">.text-light-emphasis</p>
+      <p class="text-dark bg-white">.text-dark</p>
+      <p class="text-dark-emphasis">.text-dark-emphasis</p>
+
+      <p class="text-body">.text-body</p>
+      <p class="text-body-emphasis">.text-body-emphasis</p>
+      <p class="text-body-secondary">.text-body-secondary</p>
+      <p class="text-body-tertiary">.text-body-tertiary</p>
+
+      <p class="text-black bg-white">.text-black</p>
+      <p class="text-white bg-dark">.text-white</p>
+      <p class="text-black-50 bg-white">.text-black-50</p>
+      <p class="text-white-50 bg-dark">.text-white-50</p>
+    </div>
+
+    <div class="container bg-danger">
+      <p class="text-start">Start aligned text on all viewport sizes.</p>
+      <p class="text-center">Center aligned text on all viewport sizes.</p>
+      <p class="text-end">End aligned text on all viewport sizes.</p>
+    </div>
+
+    <!-- White Space -->
+    <div class="container mb-5">
+      <div class="badge text-bg-primary text-wrap" style="width: 5rem">
+        This text should wrap.
+      </div>
+
+      <div class="badge text-bg-primary text-nowrap" style="width: 9rem">
+        This text should nowrap.
+      </div>
+    </div>
+
+    <!-- Text Transform -->
+    <div class="container">
+      <p class="text-lowercase">Lowercased text.</p>
+      <p class="text-uppercase">Uppercased text.</p>
+      <p class="text-capitalize">capitalized text.</p>
+    </div>
+
+    <!-- Font Size -->
+    <div class="container bg-success text-white">
+      <p class="fs-1">.fs-1 text</p>
+      <p class="fs-2">.fs-2 text</p>
+      <p class="fs-3">.fs-3 text</p>
+      <p class="fs-4">.fs-4 text</p>
+      <p class="fs-5">.fs-5 text</p>
+      <p class="fs-6">.fs-6 text</p>
+    </div>
+
+    <!-- Font Weight -->
+    <div class="container border">
+      <p class="fw-bold">Bold text.</p>
+      <p class="fw-bolder">
+        Bolder weight text (relative to the parent element).
+      </p>
+      <p class="fw-semibold">Semibold weight text.</p>
+      <p class="fw-medium">Medium weight text.</p>
+      <p class="fw-normal">Normal weight text.</p>
+      <p class="fw-light">Light weight text.</p>
+      <p class="fw-lighter">
+        Lighter weight text (relative to the parent element).
+      </p>
+      <p class="fst-italic">Italic text.</p>
+      <p class="fst-normal">Text with normal font style</p>
+    </div>
+
+    <!-- Flexbox && Button -->
+    <div class="container">
+      <div
+        class="bg-danger p-1 d-flex justify-content-evenly gap-5 flex-column mt-5"
+      >
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="container bg-success mt-5">
+      <!-- 
+        Ekran Kırılma Noktaları
+        
+        xs ==> 576px ve aşaığısı
+        sm ==> 576px ve üstü ekranlar
+        md ==> 768px ve üstü ekranlar
+        lg ==> 992px ve üstü ekranlar
+        xl ==> 1200px ve üstü ekranlar
+        xxl ==> 1400px ve üstü ekranlar
+
+        kırılma noktalarıdır
+
+        -->
+
+      <!-- todo: bir satır içerisinde küçük ekranlarda 1, orta boyutlu ekranlarda 2, büyük ekranlarda 3 sütun listelensin -->
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <h1>Sütun-1</h1>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h1>Sütun-2</h1>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h1>Sütun-3</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- todo: sm ekranlarda 1, md ekranlarda 2, lg ekranlarda 3, xl ekranlarda 4, xxl ekranlarda 6 sütun listelensin -->
+    <div class="row my-4 mx-2 bg-secondary">
+      <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+        <h1>Sütun-1</h1>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+        <h1>Sütun-2</h1>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+        <h1>Sütun-3</h1>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+        <h1>Sütun-4</h1>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+        <h1>Sütun-5</h1>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+        <h1>Sütun-6</h1>
+      </div>
+    </div>
+
+    <!-- todo: sm ekranlarda 1, md ekranlarda 2, lg ekranlarda 3, xl ekranlarda 4, xxl ekranlarda 6 sütun listelensin -->
+    <div
+      class="row bg-danger mx-2 my-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-6"
+    >
+      <div class="col">
+        <h1>Sütun-1</h1>
+      </div>
+      <div class="col">
+        <h1>Sütun-2</h1>
+      </div>
+      <div class="col">
+        <h1>Sütun-3</h1>
+      </div>
+      <div class="col">
+        <h1>Sütun-4</h1>
+      </div>
+      <div class="col">
+        <h1>Sütun-5</h1>
+      </div>
+      <div class="col">
+        <h1>Sütun-6</h1>
+      </div>
+    </div>
+  </body>
+</html>
