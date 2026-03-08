@@ -1,0 +1,152 @@
+// ! Scss Variables (Değişkenler)
+// Scss değişkenleri proje içerisinde stillendirme yaparken ilgili still özelliklerinde bir değişiklik yapılması ve proje içerisinde hex veya rgb kodu gibi yapıları kolay bir şekilde yönetmemizi sağlar.
+
+// Scss variables'lar sayesinde proje içerisindeki yapıların yönetimi ve değişiklik yapılması süreci çok daha kolay ve hızlı gerçekleşir.
+
+$box-width: 50px;
+$box-height: 50px;
+$box-bg: deeppink;
+$box-radius: 50%;
+$box-margin: 20px 40px;
+$box-shadow: 10px 10px 10px red;
+
+.box {
+  width: $box-width;
+  height: $box-height;
+  background-color: $box-bg;
+  border-radius: $box-radius;
+  margin: $box-margin;
+  box-shadow: $box-shadow;
+}
+
+// ! Nesting (İç içe) Yazım
+// Html'de bir elemana verilecek still özelliklerinin geçerli olması ve diğer elemanlardan ayrılması için doğru seçici ile elemanlara erişmemiz gerekir. Bu durumda parent (kapsayıcı) elemanların adını tekrar tekrar yazmak zorunda kalıyoruz. Scss nesting yazım sayesinde bu durumu daha kolay hale getirebiliriz. Fakat nestinf yazım yaparken elemanların kapsamını doğru tespit etmemiz gerekir. Aksi halde stillendirmeler çalışmaz.
+
+// * KLASİK YAZIM
+
+// header {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 10px 20px;
+//   border: 1px solid black;
+//   margin: 50px 0;
+// }
+
+// header .logo p {
+//   font-size: 30px;
+//   font-weight: 900;
+//   color: blueviolet;
+// }
+
+// header nav {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+// }
+
+// header nav a {
+//   text-decoration: none;
+//   color: black;
+// }
+
+// header nav a:hover {
+//   color: indigo;
+// }
+
+// header .buttons {
+//   display: flex;
+//   align-items: center;
+//   gap: 5px;
+// }
+
+// header .buttons button {
+//   border: none;
+//   background: none;
+//   font-size: 14px;
+//   font-weight: 900;
+//   padding: 5px;
+// }
+
+// header .buttons button:hover {
+//   background-color: brown;
+//   color: white;
+// }
+
+// * NESTİNG YAZIM
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border: 1px solid black;
+  margin: 50px 0;
+
+  //   LOGO
+  .logo p {
+    font-size: 30px;
+    font-weight: 900;
+    color: blueviolet;
+  }
+
+  //   Nav
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        color: indigo;
+      }
+    }
+  }
+
+  //   button
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    button {
+      border: none;
+      background: none;
+      font-size: 14px;
+      font-weight: 900;
+      padding: 5px;
+
+      &:hover {
+        background-color: brown;
+        color: white;
+      }
+    }
+  }
+}
+
+// ! Scss Inheritance (Kalıtım)
+// Projelerde çokça tekrar eden kodları daha az tekrar etmek için extend kullanılır. Extend işlemi yapmak için ilk olarak miras alınacak yapı oluşturulur. Oluşturulan bu yapı içerisinde gerekli stillendirmeler yapılır. Gereken yerlerde bu yapılar @extend ile miras alınır.
+
+#flexBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper {
+  background-color: aqua;
+  padding: 20px;
+  margin: 30px;
+  @extend #flexBox;
+}
+
+.wrapper-1 {
+  @extend #flexBox;
+  background-color: violet;
+  padding: 15px;
+  margin: 30px;
+  color: white;
+}

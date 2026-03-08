@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scss</title>
+
+    <!-- Scss'de stillendirme için import ederken watch sass eklentisinin oluşturduğu css dosyasını import ediyoruz. -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- Scss Nedir ?
+    Scss, css'in sahip olduğu özelliklerin haricinde özelliklere sahip bir css ön işlemcisidir. Tarayıcılar scss kodlarını okuyamadıkları için css'ten kopamıyoruz. Yazdığımız scss kodlarını css e çevirmemiz gerekiyor. Bu yüzden css ön işlemcisidir diyoruz. Scss variables, nesting yazım, inhteritance,mixin ve modüler dosya yönetimi gibi artıları sayesinde daha kolay ve hızlı stillendirme yapmamızı sağlar.
+    
+    ? Scss bu artılarına rağmen tarayıcıların scss kodlarını okuyamamasından dolayı live sass (watch sass) ismindeki eklentiyi kullanmamız gerekir. Bu eklentiyi kurduktan sonra styles klasörü içerisinde style.scss isminde bir dosya oluşturduk. Ardından vs code'un alt tarafında "watch sass" butonuna tıklayarak eklentiyi çalıştırdık. Bu sayede scss kodları css dosyasına çevrilmiş oldu. 
+    -->
+
+    <!-- ! Scss Variables Örneği -->
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <!-- ! Nesting Örneği -->
+    <header>
+      <!-- logo -->
+      <div class="logo">
+        <p>LOGO</p>
+      </div>
+
+      <nav>
+        <a href="#">Anasayfa</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+      </nav>
+
+      <div class="buttons">
+        <button>Giriş Yap</button>
+        <button>Kayıt Ol</button>
+      </div>
+    </header>
+
+    <!-- ! Inheritance Örneği -->
+    <div class="wrapper">
+      <button>Buton-1</button>
+      <button>Buton-2</button>
+      <button>Buton-3</button>
+      <button>Buton-4</button>
+      <button>Buton-5</button>
+    </div>
+
+    <div class="wrapper-1">
+      <p>p-1</p>
+      <p>p-2</p>
+      <p>p-3</p>
+      <p>p-4</p>
+      <p>p-5</p>
+    </div>
+  </body>
+</html>
