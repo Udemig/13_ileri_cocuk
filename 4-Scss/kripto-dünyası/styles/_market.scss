@@ -1,0 +1,54 @@
+.market {
+  padding: 5rem 0;
+
+  //   Title
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  //   Wrapper
+  .crypto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+
+    // Card
+    .crypto-card {
+      background-color: $white;
+      padding: 2rem;
+      text-align: center;
+      border-radius: $border-radius;
+      transition: $transition;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+      }
+
+      .price {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0.5rem 0;
+      }
+
+      .change {
+        font-weight: bold;
+
+        &.positive {
+          color: #10b981;
+        }
+
+        &.negative {
+          color: #ef4444;
+        }
+      }
+    }
+  }
+}
